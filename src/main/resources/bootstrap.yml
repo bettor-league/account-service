@@ -4,6 +4,8 @@ spring:
       uri: http://localhost:1000
   application:
     name: authentication-service
+  main:
+    allow-bean-definition-overriding: true
 ---
 spring:
   profiles: docker
