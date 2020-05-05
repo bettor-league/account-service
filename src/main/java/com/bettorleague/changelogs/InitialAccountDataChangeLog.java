@@ -3,7 +3,7 @@ package com.bettorleague.changelogs;
 import com.github.cloudyrock.mongock.ChangeLog;
 
 @ChangeLog
-public class AdminAccountChangeLog {
+public class InitialAccountDataChangeLog {
 
     /*
     @ChangeSet(order = "001", id = "insertAdminAccount", author = "Nadjim Chabane")
