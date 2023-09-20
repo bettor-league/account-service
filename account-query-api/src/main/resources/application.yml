@@ -1,0 +1,18 @@
+server:
+  port: 0
+
+spring:
+  cloud:
+    config:
+      name: account-service, mongo-service, kafka-service
+  config:
+    name: "account-query-service.yml"
+    import: "optional:configserver:http://localhost:1000"
+  application:
+    name: account-query-service
+---
+spring:
+  config:
+    activate:
+      on-profile: docker
+    import: "optional:configserver:http://configuration-service:1000"
