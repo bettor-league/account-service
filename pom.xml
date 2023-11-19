@@ -12,12 +12,6 @@
         <java.version>17</java.version>
     </properties>
 
-    <modules>
-        <module>account-core</module>
-        <module>account-command-api</module>
-        <module>account-query-api</module>
-    </modules>
-
     <distributionManagement>
         <repository>
             <id>github</id>
@@ -26,4 +20,24 @@
         </repository>
     </distributionManagement>
 
+    <profiles>
+        <profile>
+            <id>default</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <modules>
+                <module>account-core</module>
+            </modules>
+        </profile>
+
+        <profile>
+            <id>services</id>
+            <modules>
+                <module>account-core</module>
+                <module>account-query-api</module>
+                <module>account-command-api</module>
+            </modules>
+        </profile>
+    </profiles>
 </project>
