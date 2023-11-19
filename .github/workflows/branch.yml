@@ -6,6 +6,7 @@ on:
       - '*'
       - '!master'
       - '!gh-pages'
+
 jobs:
   call-reusable:
     uses: bettor-league/reusable-workflow/.github/workflows/java-maven-ci.yml@master
