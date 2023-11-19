@@ -1,0 +1,14 @@
+name: push-on-master
+
+on:
+  push:
+    branches:
+      - 'master'
+
+jobs:
+  call-reusable:
+    uses: bettor-league/reusable-workflow/.github/workflows/java-maven-ci.yml@master
+    with:
+      maven_command: 'deploy'
+    secrets:
+      maven-settings: ${{ secrets.MAVEN_SETTINGS }}
