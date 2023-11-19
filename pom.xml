@@ -40,20 +40,4 @@
             </modules>
         </profile>
     </profiles>
-
-    <repositories>
-        <repository>
-            <id>github</id>
-            <name>GitHub Packages</name>
-            <url>https://maven.pkg.github.com/bettor-league/packages</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
-
-
 </project>
