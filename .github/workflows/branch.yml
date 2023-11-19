@@ -12,4 +12,4 @@ jobs:
     with:
       maven_profiles: 'services'
     secrets:
-      GITHUB_TOKEN: ${{ secrets.TOKEN }}
+      github-token: ${{ secrets.TOKEN }}
