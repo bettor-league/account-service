@@ -8,8 +8,9 @@ on:
       - '!gh-pages'
 jobs:
   build-account-command-api:
-    uses: bettor-league/reusable-workflow/.github/workflows/java-maven-ci.yml@master
+    uses: bettor-league/reusable-workflow/.github/workflows/build-java-microservice.yml@master
     with:
-      maven_command: 'clean install'
-      maven_profiles: 'services'
+      maven_build_core: true
+      maven_pom_location: 'account-command-api'
+      upload_artifact: true
     secrets: inherit
