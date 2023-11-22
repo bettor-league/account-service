@@ -9,7 +9,7 @@ on:
 
 jobs:
   account-command-api:
-    uses: bettor-league/reusable-workflow/.github/workflows/java-microservice.yml
+    uses: bettor-league/reusable-workflow/.github/workflows/java-microservice.yml@master
     with:
       maven_build_core: true
       maven_pom_location: 'account-command-api'
