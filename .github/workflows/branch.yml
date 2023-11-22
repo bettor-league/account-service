@@ -6,6 +6,7 @@ on:
       - '*'
       - '!master'
       - '!gh-pages'
+
 jobs:
   build-account-command-api:
     uses: bettor-league/reusable-workflow/.github/workflows/build-java-microservice.yml@master
