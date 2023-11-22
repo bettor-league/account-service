@@ -8,8 +8,8 @@ on:
       - '!gh-pages'
 
 jobs:
-  build-account-command-api:
-    uses: bettor-league/reusable-workflow/.github/workflows/build-java-microservice.yml@master
+  account-command-api:
+    uses: bettor-league/reusable-workflow/.github/workflows/java-maven-ci.yml@master
     with:
       maven_build_core: true
       maven_pom_location: 'account-command-api'
