@@ -36,7 +36,6 @@
                 <module>account-core</module>
             </modules>
         </profile>
-
         <profile>
             <id>build-all</id>
             <modules>
