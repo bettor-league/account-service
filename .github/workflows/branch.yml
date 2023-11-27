@@ -6,10 +6,20 @@ on:
       - '*'
       - '!master'
       - '!gh-pages'
+
 jobs:
   build-account-command-api:
-    uses: bettor-league/reusable-workflow/.github/workflows/java-maven-ci.yml@master
+    uses: bettor-league/reusable-workflow/.github/workflows/java-project.yml@master
     with:
+      maven_module_name: 'account-command-api'
       maven_command: 'clean install'
-      maven_profiles: 'services'
+      upload_artifact: true
+    secrets: inherit
+
+  build-account-query-api:
+    uses: bettor-league/reusable-workflow/.github/workflows/java-project.yml@master
+    with:
+      maven_module_name: 'account-query-api'
+      maven_command: 'clean install'
+      upload_artifact: true
     secrets: inherit

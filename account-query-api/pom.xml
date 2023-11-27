@@ -32,7 +32,7 @@
         <dependency>
             <groupId>com.bettorleague</groupId>
             <artifactId>authentication-core</artifactId>
-            <version>1.0-20231120-194602-SHA17e447e</version>
+            <version>1.0-20231127-144424-RELEASE-SHAccd2389</version>
             <scope>compile</scope>
         </dependency>
 

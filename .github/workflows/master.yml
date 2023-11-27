@@ -12,3 +12,17 @@ jobs:
       maven_command: 'clean deploy'
       maven_profiles: 'default'
     secrets: inherit
+
+  build-account-command-api:
+    uses: bettor-league/reusable-workflow/.github/workflows/java-project.yml@master
+    with:
+      maven_module_name: 'account-command-api'
+      upload_artifact: true
+    secrets: inherit
+
+  build-account-query-api:
+    uses: bettor-league/reusable-workflow/.github/workflows/java-project.yml@master
+    with:
+      maven_module_name: 'account-query-api'
+      upload_artifact: true
+    secrets: inherit
