@@ -11,7 +11,7 @@ jobs:
   build-account-command-api:
     uses: bettor-league/reusable-workflow/.github/workflows/java-project.yml@v1
     with:
-      maven_pom_location: 'account-command-api'
+      maven_module_name: 'account-command-api'
       maven_command: 'clean install'
       upload_artifact: true
     secrets: inherit
