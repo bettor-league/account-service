@@ -10,7 +10,6 @@ jobs:
     uses: bettor-league/reusable-workflow/.github/workflows/java-project.yml@master
     with:
       maven_command: 'clean deploy'
-      maven_profiles: 'default'
     secrets: inherit
 
   build-account-command-api:
